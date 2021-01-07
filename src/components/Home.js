@@ -33,7 +33,9 @@ const HOme =() =>{
                         <img className="img" src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
                     </div>
                     <div className="card-content">
-                       <p>title: {post.title}</p>
+                        <Link to={'/' + post.slug.current}>
+                           <p className="truncate">{post.title}</p>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -47,9 +49,8 @@ const HOme =() =>{
     return (
         <div className="container">
             <div className="row">
-                <div className="col s12 l6">
+                <h3 className="center">My blog posts</h3>
                     {postList} 
-                </div>
             </div>
            
         </div>
