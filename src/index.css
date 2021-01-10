@@ -10,3 +10,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.blockcontent{
+  word-wrap: break-word;
+}
+.foot-space{
+  margin-right: 20px;
+}
+
+.logo{
+  font-family:   'Pacifico', cursive;
+  font-weight: bold;
+}
+.cardspacing{
+  margin: 50px 0;
+}
+.about-page{
+  background: #efefef;
+}
+.about-content{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.active{
+  background: black;
+  color: grey;
+}
+
+.main-nav:hover{
+  color: grey;
+}

@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import sanityClient from '../client'
+import Header from './Header/Header'
 
 
 const HOme =() =>{
-    const [posts, setPosts] = useState([])
+     const [posts, setPosts] = useState([])
 
     useEffect(() =>{
         sanityClient.fetch(`*[_type == "post"]{
@@ -28,7 +29,7 @@ const HOme =() =>{
     const postList = posts.length ?(
         posts.map(post =>(
             <div className="col s12 l6">
-                <div className="card" key={post.slug.current}>
+                <div className="card " key={post.slug.current}>
                     <div className="card-image">
                         <img className="img" src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
                     </div>
@@ -47,13 +48,16 @@ const HOme =() =>{
     )
 
     return (
-        <div className="container">
-            <div className="row">
-                <h3 className="center">My blog posts</h3>
-                    {postList} 
+        <React.Fragment>
+            <Header/>
+            <div className="container">
+               <div className="row cardspacing">
+                  <h4 className="center">My blog posts</h4>
+                      {postList} 
+               </div>  
             </div>
-           
-        </div>
+        </React.Fragment>
+
     )
 }
 

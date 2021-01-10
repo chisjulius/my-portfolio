@@ -2,9 +2,10 @@ import React, {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import sanityClient from '../client'
 import BlockContent from '@sanity/block-content-to-react'
+import Navbar from './Navbar'
 
 const Post =() =>{
-    const [post, setPost] = useState(null)
+     const [post, setPost] = useState(null)
     const {slug} = useParams();
 
     useEffect(() =>{
@@ -23,11 +24,11 @@ const Post =() =>{
             "authorImage": author->image
         }`)
         .then(data =>{
-            console.log(data)
             setPost(data[0])
         })
         .catch(console.error);
     }, [slug])
+  
 
     const postToRender = post ?(
         <div className="col s12 l10 offset-l1">
@@ -37,18 +38,23 @@ const Post =() =>{
               </div>
              <div className="card-content">
                 <h5 className="title indigo-text">{post.title}</h5>
-                <BlockContent blocks ={post.body} projectId="qup41ce2" dataset="production"/>
+                <div className="blockcontent"><BlockContent blocks ={post.body} projectId="qup41ce2" dataset="production"/></div>
              </div>
         </div>
         </div>
 
     ) :(<div className="center">Loading....</div>)
+    
     return (
-        <div className="container movies">
-            <div className="row">
-                {postToRender}
+        <React.Fragment>
+            <Navbar/>
+            <div className="container movies">
+                <div className="row">
+                    {postToRender}
+                </div>
             </div>
-        </div>
+        </React.Fragment>
+
     )
 }
 
