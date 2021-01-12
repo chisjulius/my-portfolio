@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar'
 import img from './img.jpg'
 
 const About =() =>{
     return (
         <div className="about-page">
            <Navbar/>
-            <div className="container white about-content">
+            <div className="container white my-content">
                 <div className="row">
                     <div className="col s12 l4">
                         <img src={img} alt="my self" className="responsive-img"/>

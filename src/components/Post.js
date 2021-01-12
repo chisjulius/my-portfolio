@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import sanityClient from '../client'
 import BlockContent from '@sanity/block-content-to-react'
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar'
+import serializers from './serializers'
 
 const Post =() =>{
      const [post, setPost] = useState(null)
@@ -38,7 +39,7 @@ const Post =() =>{
               </div>
              <div className="card-content">
                 <h5 className="title indigo-text">{post.title}</h5>
-                <div className="blockcontent"><BlockContent blocks ={post.body} projectId="qup41ce2" dataset="production"/></div>
+                <div className="blockcontent"><BlockContent blocks ={post.body} projectId="qup41ce2" dataset="production" serializers={serializers}/></div>
              </div>
         </div>
         </div>
@@ -48,7 +49,7 @@ const Post =() =>{
     return (
         <React.Fragment>
             <Navbar/>
-            <div className="container movies">
+            <div className="container  my-content">
                 <div className="row">
                     {postToRender}
                 </div>

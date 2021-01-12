@@ -27,17 +27,9 @@ code {
 .about-page{
   background: #efefef;
 }
-.about-content{
+.my-content{
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 20px;
 }
 
-.active{
-  background: black;
-  color: grey;
-}
-
-.main-nav:hover{
-  color: grey;
-}
