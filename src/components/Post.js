@@ -32,16 +32,10 @@ const Post =() =>{
   
 
     const postToRender = post ?(
-        <div className="col s12 l10 offset-l1">
-          <div className="card">
-              <div className="card-image">
-                  <img src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
-              </div>
-             <div className="card-content">
-                <h5 className="title indigo-text">{post.title}</h5>
-                <div className="blockcontent"><BlockContent blocks ={post.body} projectId="qup41ce2" dataset="production" serializers={serializers}/></div>
-             </div>
-        </div>
+        <div className="col s12">
+            <img src={post.mainImage.asset.url} alt={post.mainImage.alt}/>    
+            <h5 className="indigo-text">{post.title}</h5>
+            <div className="blockcontent"><BlockContent blocks ={post.body} projectId="qup41ce2" dataset="production" serializers={serializers}/></div>
         </div>
 
     ) :(<div className="center">Loading....</div>)

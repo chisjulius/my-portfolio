@@ -13,7 +13,7 @@ const About =() =>{
                     </div>
                     <div className="col s12 l6 offset-l1">
                         <p>
-                            My name is <strong>Chisom Julius</strong> from Nigeria
+                            My name is <strong>Chisom Julius</strong> from Nigeria.
                         </p>
                         <p>
                             I'm a dedicated front-end developer with a keen eye for details, and a determination 

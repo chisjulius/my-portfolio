@@ -13,9 +13,9 @@ const Header =() =>{
                 </label>
                 <label className="logo">chisjulius</label>
                     <ul>
-                        <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="/about">About</NavLink></li>
-                        <li><NavLink to="/project">Project</NavLink></li>
+                        <li><NavLink exact to="/">Home</NavLink></li>
+                        <li><NavLink exact to="/about">About</NavLink></li>
+                        <li><NavLink exact to="/project">Project</NavLink></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>

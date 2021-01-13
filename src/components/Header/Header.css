@@ -49,6 +49,7 @@ label.logo{
 a.active,a:hover{
     transition: .5s;
     background: grey;
+    border-radius: 3px;
 }
 
 .checkbtn{
