@@ -17,7 +17,8 @@ const HOme =() =>{
                     url
                 },
                 alt
-            }
+            },
+            publishedAt   
         }`)
         .then(data =>{
             console.log(data)
@@ -35,7 +36,8 @@ const HOme =() =>{
                     </div>
                     <div className="card-content">
                         <Link to={'/' + post.slug.current}>
-                           <p className="truncate">{post.title}</p>
+                           <p className="title truncate">{post.title}</p>
+                           <p className="indigo-text text-darken-4">{post.publishedAt}</p>
                         </Link>
                     </div>
                 </div>
