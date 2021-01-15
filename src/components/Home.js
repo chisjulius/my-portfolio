@@ -54,7 +54,7 @@ const HOme =() =>{
             <Header/>
             <div className="container">
                <div className="row cardspacing">
-                  <h4 className="center">My blog posts</h4>
+                  <h4 className="center">My posts</h4>
                       {postList} 
                </div>  
             </div>

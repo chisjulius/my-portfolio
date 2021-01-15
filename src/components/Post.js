@@ -56,7 +56,7 @@ const Post =(props) =>{
                     {postToRender}
                 </div>
             </div>
-            <div id="disqus_thread"></div>
+            <div id="disqus_thread" config ={disqus_config}></div>
         </React.Fragment>
 
     )
