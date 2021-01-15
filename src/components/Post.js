@@ -31,6 +31,10 @@ const Post =(props) =>{
     }, [slug])
 
     const url = 'https://chisomjulius.netlify.app/'
+    var disqus_config = function () {
+        this.page.url = `${url + props.location.pathname}`;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = post.slug.current; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
   
 
     const postToRender = post ?(
