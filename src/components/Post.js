@@ -35,6 +35,13 @@ const Post =(props) =>{
         this.page.url = `${url + props.location.pathname}`;  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = post.slug.current; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://chisomjulius.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
   
 
     const postToRender = post ?(
@@ -56,7 +63,7 @@ const Post =(props) =>{
                     {postToRender}
                 </div>
             </div>
-            <div id="disqus_thread" config ={disqus_config}></div>
+            <div id="disqus_thread"></div>
         </React.Fragment>
 
     )
