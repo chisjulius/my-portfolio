@@ -5,7 +5,7 @@ import BlockContent from '@sanity/block-content-to-react'
 import Navbar from './Navbar/Navbar'
 import serializers from './serializers'
 
-const Post =() =>{
+const Post =(props) =>{
      const [post, setPost] = useState(null)
     const {slug} = useParams();
 
@@ -29,6 +29,8 @@ const Post =() =>{
         })
         .catch(console.error);
     }, [slug])
+
+    const url = 'https://chisomjulius.netlify.app/'
   
 
     const postToRender = post ?(
@@ -39,6 +41,8 @@ const Post =() =>{
         </div>
 
     ) :(<div className="center">Loading....</div>)
+
+
     
     return (
         <React.Fragment>
@@ -48,6 +52,7 @@ const Post =() =>{
                     {postToRender}
                 </div>
             </div>
+            <div id="disqus_thread"></div>
         </React.Fragment>
 
     )
