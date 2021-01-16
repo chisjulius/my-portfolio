@@ -62,8 +62,8 @@ const Post =(props) =>{
                 <div className="row">
                     {postToRender}
                 </div>
+                <div className="disqus" id="disqus_thread"></div>
             </div>
-            <div id="disqus_thread"></div>
         </React.Fragment>
 
     )

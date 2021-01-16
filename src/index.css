@@ -32,4 +32,10 @@ code {
   margin-bottom: 50px;
   padding: 20px;
 }
+img{
+  border-radius: 5px;
+}
+.disqus{
+  margin-top: 50px;
+}
 
