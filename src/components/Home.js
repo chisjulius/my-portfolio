@@ -8,7 +8,7 @@ const HOme =() =>{
      const [posts, setPosts] = useState([])
 
     useEffect(() =>{
-        sanityClient.fetch(`*[_type == "post"]{
+        sanityClient.fetch(`*[_type == "post"] | order(publishedAt  desc){
             title,
             slug,
             mainImage{
