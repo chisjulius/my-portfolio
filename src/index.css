@@ -12,6 +12,10 @@ code {
 }
 .blockcontent{
   word-wrap: break-word;
+  margin-top: 20px;
+}
+.my-content{
+  margin-top: 50px;
 }
 .foot-space{
   margin-right: 20px;
@@ -27,15 +31,12 @@ code {
 .about-page{
   background: #efefef;
 }
-.my-content{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 20px;
-}
+
 img{
   border-radius: 5px;
 }
 .disqus{
   margin-top: 50px;
+  padding: 50px;
 }
 

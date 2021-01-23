@@ -27,7 +27,7 @@ const Project =() =>{
                         <h4 className="title">{project.title}</h4>
                         <p>{project.description}</p>
                          <div  className="card-action">
-                           <a href={project.link} className="blue-text" target="_blank">link👉</a>
+                           <a href={project.link} className="blue-text" target="_blank" rel="noreferrer">link👉</a>
                         </div>
                     </div>
                 </div>

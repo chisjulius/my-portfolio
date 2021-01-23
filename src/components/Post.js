@@ -45,11 +45,19 @@ const Post =(props) =>{
   
 
     const postToRender = post ?(
-        <div className="col s12">
-            <img  className="responsive-img" src={post.mainImage.asset.url} alt={post.mainImage.alt}/>    
-            <h5 className="indigo-text">{post.title}</h5>
-            <div className="blockcontent"><BlockContent blocks ={post.body} projectId="qup41ce2" dataset="production" serializers={serializers}/></div>
+    <div>  
+        <div className="container">
+            <div className="col s12">
+                <img  className="responsive-img" src={post.mainImage.asset.url} alt={post.mainImage.alt}/> 
+                <h5 className="indigo-text">{post.title}</h5> 
+            </div>
         </div>
+        <div className="my-content">
+            <div className="col s10 offset-s1">
+                <div className="blockcontent"><BlockContent blocks ={post.body} projectId="qup41ce2" dataset="production" serializers={serializers}/></div>
+            </div>
+        </div>
+     </div>
 
     ) :(<div className="center">Loading....</div>)
 
@@ -58,12 +66,10 @@ const Post =(props) =>{
     return (
         <React.Fragment>
             <Navbar/>
-            <div className="container  my-content">
                 <div className="row">
                     {postToRender}
                 </div>
                 <div className="disqus" id="disqus_thread"></div>
-            </div>
         </React.Fragment>
 
     )

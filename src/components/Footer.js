@@ -13,13 +13,13 @@ const Footer = () =>{
                             </div>
                             <div className="col s12 l4 offset-l2 scrollspy" id="contact">
                                 <h5>Connect</h5>
-                                    <a href="https://www.facebook.com/chisom.julius" target="_blank" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="facebook">
+                                    <a href="https://www.facebook.com/chisom.julius" target="_blank" rel="noreferrer" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="facebook">
                                         <i className="fab fa-facebook"></i>
                                     </a>
-                                    <a href="https://www.instagram.com/chisom_julius/" target="_blank" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="instagram">
+                                    <a href="https://www.instagram.com/chisom_julius/" target="_blank" rel="noreferrer" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="instagram">
                                         <i className="fab fa-instagram"></i>
                                     </a>
-                                    <a href="https://twitter.com/ChisomJavi?s=08" target="_blank" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="twitter">
+                                    <a href="https://twitter.com/ChisomJavi?s=08" target="_blank" rel="noreferrer" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="twitter">
                                         <i className="fab fa-twitter"></i>
                                     </a>
                             </div>

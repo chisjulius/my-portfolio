@@ -29,8 +29,8 @@ const HOme =() =>{
 
     const postList = posts.length ?(
         posts.map(post =>(
-            <div className="col s12 l6">
-                <div className="card " key={post.slug.current}>
+            <div className="col s12 l6" key={post.slug.current}>
+                <div className="card ">
                     <div className="card-image">
                         <img className="img" src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
                     </div>
