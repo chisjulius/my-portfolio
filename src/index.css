@@ -49,6 +49,7 @@ code {
   width: 400px;
   background: #efefef;
   padding: 15px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 img{
