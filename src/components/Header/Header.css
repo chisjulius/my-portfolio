@@ -105,15 +105,11 @@ a.active,a:hover{
 }
 @media screen and (max-width: 670px){
     header{
-        min-height: 620px;
+        min-height: 700px;
     }
 }
 @media(max-width: 350px){
     label.logo{
         font-size: 15px;
     }
-}
-
-.card {
-    z-index: -99;
 }

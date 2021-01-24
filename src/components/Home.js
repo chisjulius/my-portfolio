@@ -29,12 +29,10 @@ const HOme =() =>{
 
     const postList = posts.length ?(
         posts.map(post =>(
-            <div className="col s12 l6" key={post.slug.current}>
-                <div className="card ">
-                    <div className="card-image">
-                        <img className="img" src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
-                    </div>
-                    <div className="card-content">
+            <div className="card-container center" key={post.slug.current}>
+                <div className="card-wrapper">
+                    <img className="img" src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
+                    <div className="card-inf0">
                         <Link to={'/' + post.slug.current}>
                            <p className="title truncate">{post.title}</p>
                            <p className="indigo-text text-darken-4">{post.publishedAt}</p>
@@ -52,8 +50,8 @@ const HOme =() =>{
     return (
         <React.Fragment>
             <Header/>
-            <div className="container">
-               <div className="row cardspacing">
+            <div className=" center">
+               <div className="">
                   <h4 className="center">My posts</h4>
                       {postList} 
                </div>  

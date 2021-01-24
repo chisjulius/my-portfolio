@@ -32,11 +32,30 @@ code {
   background: #efefef;
 }
 
-img{
-  border-radius: 5px;
-}
+
 .disqus{
   margin-top: 50px;
   padding: 50px;
+} 
+
+.card-container{
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+.card-wrapper{
+  margin: 1rem;
+  width: 400px;
+  background: #efefef;
+  padding: 15px;
+}
+
+img{
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.img2{
+  width: 100%;
+}

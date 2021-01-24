@@ -47,9 +47,9 @@ const Post =(props) =>{
     const postToRender = post ?(
     <div>  
         <div className="container">
-            <div className="col s12">
-                <img  className="responsive-img" src={post.mainImage.asset.url} alt={post.mainImage.alt}/> 
-                <h5 className="indigo-text">{post.title}</h5> 
+            <div className="col s12 l10 offset-l1 postwrap">
+                <img  className="responsive-img img2" src={post.mainImage.asset.url} alt={post.mainImage.alt}/> 
+                <h5 className="indigo-text center">{post.title}</h5> 
             </div>
         </div>
         <div className="my-content">
