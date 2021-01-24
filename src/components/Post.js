@@ -53,7 +53,7 @@ const Post =(props) =>{
             </div>
         </div>
         <div className="my-content">
-            <div className="col s10 offset-s1">
+            <div className="col s12">
                 <div className="blockcontent"><BlockContent blocks ={post.body} projectId="qup41ce2" dataset="production" serializers={serializers}/></div>
             </div>
         </div>
