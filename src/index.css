@@ -41,12 +41,11 @@ code {
 .card-container{
   display: inline-block;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .card-wrapper{
   margin: 1rem;
-  width: 400px;
+  width: 370px;
   background: #efefef;
   padding: 15px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -59,4 +58,9 @@ img{
 
 .img2{
   width: 100%;
+}
+@media(max-width: 373px){
+  .card-wrapper{
+    width: 250px;
+  }
 }
