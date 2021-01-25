@@ -7,8 +7,8 @@ const About =() =>{
         <div className="about-page">
            <Navbar/>
             <div className="container white my-content">
-                <div className="row">
-                    <div className="col s12 l4">
+                <div className="row  row-background">
+                    <div className="col s12 l4 img-div">
                         <img src={img} alt="my self" className="responsive-img"/>
                     </div>
                     <div className="col s12 l6 offset-l1">
@@ -33,10 +33,9 @@ const About =() =>{
                         </p>
 
                     </div>
-
                 </div>
-
             </div>
+            <div className="empty-div"></div>
         </div>
     )
 }
