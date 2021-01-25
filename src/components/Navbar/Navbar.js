@@ -11,7 +11,7 @@ const Navbar =() => {
                 <div className="row">
                     <div className="col s12 center nav">      
                         <NavLink exact to="/" className="main-nav">Home</NavLink>
-                        <NavLink exact to="/about" className="main-nav">About</NavLink>
+                        <NavLink exact to="/about" className="main-nav nav-align">About</NavLink>
                         <NavLink exact to="/project" className="main-nav">Projects</NavLink>  
                     </div>
                 </div>
