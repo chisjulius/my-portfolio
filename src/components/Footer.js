@@ -7,21 +7,27 @@ const Footer = () =>{
                     <div className="container">
                         <div className="row">
                             <div className="col s12 l6  scrollspy">
-                                <h5>About</h5>
-                                <p>Chisom Julius, a dedicated frontend web developer from Nigeria</p>
-                                <p>A 500 level medical student at Abia State University Uturu, Nigeria</p>
+                                <h5 className="center">About</h5>
+                                <p className="center">Chisom Julius, A dedicated frontend web developer from Nigeria.</p>
+                                <p className="center">Doctor in training at Abia State University teaching hospital Aba, Nigeria.</p>
                             </div>
                             <div className="col s12 l4 offset-l2 scrollspy" id="contact">
-                                <h5>Connect</h5>
+                                <h5 className="center">Connect</h5>
+                                <div  className="center">
+                                <a href="mailto:chisomjulius640@gmail.com"  target="_top" rel="noreferrer" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="email">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                    </a>
                                     <a href="https://www.facebook.com/chisom.julius" target="_blank" rel="noreferrer" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="facebook">
                                         <i className="fab fa-facebook"></i>
                                     </a>
-                                    <a href="https://www.instagram.com/chisom_julius/" target="_blank" rel="noreferrer" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="instagram">
-                                        <i className="fab fa-instagram"></i>
+                                    <a href="https://www.linkedin.com/in/chisom-julius-68a156205/" target="_blank" rel="noreferrer" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="linedin">
+                                        <i className="fab fa-linkedin"></i>
                                     </a>
                                     <a href="https://twitter.com/ChisomJavi?s=08" target="_blank" rel="noreferrer" className="tooltipped btn-floating btn-small grey darken-4 foot-space" data-tooltip="twitter">
                                         <i className="fab fa-twitter"></i>
                                     </a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
