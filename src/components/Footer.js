@@ -8,8 +8,8 @@ const Footer = () =>{
                         <div className="row">
                             <div className="col s12 l6  scrollspy">
                                 <h5 className="center">About</h5>
-                                <p className="center">Chisom Julius, A dedicated frontend web developer from Nigeria.</p>
-                                <p className="center">Doctor in training at Abia State University teaching hospital Aba, Nigeria.</p>
+                                <p className="center">Chisom Julius, A dedicated javascript fullstack developer from Nigeria.</p>
+                                <p className="center">Lives at Abia State University teaching hospital Aba, Nigeria.</p>
                             </div>
                             <div className="col s12 l4 offset-l2 scrollspy" id="contact">
                                 <h5 className="center">Connect</h5>

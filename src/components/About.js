@@ -16,17 +16,21 @@ const About =() =>{
                             My name is <strong>Chisom Julius</strong> from Nigeria.
                         </p>
                         <p>
-                            I'm a dedicated front-end developer with a keen eye for details, and a determination 
+                            I'm a dedicated javascript full-stack developer with a keen eye for details, and a determination 
                             to deliver the very highest quality.
                         </p>
                         <p>
-                            The main areas of my expertise are HTML(5), CSS(3), Javascript(react and jQuery), and some cool 
-                            collaborative tools like git and slack. I use Netlify as my choice of deployments and my preferred
+                            The main areas of my expertise are HTML(5), CSS(3), Javascript(react, jQuery, node js), and some cool 
+                            collaborative tools like git and slack. I use Netlify and Heroku as my choice of deployments and my preferred
                             CMS is sanity.io
                         </p>
                         <p>
                             I try to build web apps to keep my skills and github as updated as possible, and in my free times 
                             you can find me reading medical books, playing football, watching movies, or hanging out with friends.
+                        </p>
+                        <p>
+                            Previously, i worked with <a href="https://www.f6s.com/3reen">3REEN</a> an e-commerce marketplace with new ideas
+                             and insights that would make online shopping experience as close to physical shoppping as possible. 
                         </p>
                         <p>
                             Interested in working with me? <a href="#contact">Get in touch</a> and i'd be happy to talk to you.
