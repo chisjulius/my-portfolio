@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header =() =>{
     return (
-        <div>
+        <div>   
             <header>
              <div className="navigation">
                 <input type="checkbox" id="check" />

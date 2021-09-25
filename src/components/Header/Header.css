@@ -12,13 +12,14 @@ header{
     background-size:  cover;
     background-position: center;
     min-height: 1000px;
+   
 }
 
 .navigation{
-    background:  black;
+    background:  transparent;
     height: 80px;
     width: 100%;
-    position: fixed;
+    position: relative;
 
     }
 
@@ -81,10 +82,14 @@ a.active,a:hover{
     .checkbtn{
         display: block;
     }
+    .navigation{
+        background: black;
+        position: fixed;
+    }
     ul{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 200vh;
         background: #2c3e50;
         top: 80px;
         left: -100%;
@@ -106,11 +111,8 @@ a.active,a:hover{
 @media screen and (max-width: 670px){
     header{
         background-size: contain;
-        min-height: 430px;
+        min-height: 540px;
+    
     }
 }
-@media(max-width: 350px){
-    label.logo{
-        font-size: 15px;
-    }
-}
+
